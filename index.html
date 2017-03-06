@@ -1,12 +1,213 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Пинк</title>
+	</head>
+	<body>
+		<header class="main-header">
+			<h1 class="visually-hidden">Pink - лучшее приложение для обмена фотографиями</h1>
+			<a class="header_logo">
+				<img src="img/http://placehold.it/150x100" width="75" height="23" alt="Логотип Pink">
+			</a>
+			<nav class="main-nav main-nav--closed main-nav--nojs">
+				<div class="main-nav__open-btn">Показать меню</div>
+				<div class="main-nav__close-btn">Скрыть меню</div>
+				<div class="main-nav__wrap">
+					<ul class="main-nav__list">
+						<li class="main-nav__item"><a>Главная</a></li>
+						<li class="main-nav__item"><a href="#">Фотографии</a></li>
+						<li class="main-nav__item"><a href="#">Конкурс</a></li>
+						<li class="main-nav__item"><a href="#">HTML Academy</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section class="intro">
+				<h2 class="intro__title visually-hidden">Скачать Pink</h2>
+				<header class="intro__header"></header>
+				<a class="buttons buttons--download-app" href="#">Скачать приложение</a>
+				<ul class="markets-list">
+					<li class="markets-list__item markets-list__item--ios">
+						<a href="#">AppStore</a>
+					</li>
+					<li class="markets-list__item markets-list__item--android">
+						<a href="#">Google Play</a>
+					</li>
+					<li class="markets-list__item markets-list__item--microsoft">
+						<a href="#">Microsoft Store</a>
+					</li>
+				</ul>
+				<footer class="intro__footer">
+				<p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+				</footer>
+			</section>
+			<section class="advantages">
+				<h2 class="advantages__block-title visually-hidden">Преимущества Pink</h2>
+				<header class="advantages__header">
+					<p>Устали от серости мегаполиса?</p>
+					<p>Нам есть, что вам  предложить!</p>
+				</header>
+				<div class="advantages__list">
+					<div class="advantages__item">
+						<div class="advantages__title">Поднимает настроение</div>
+						<p>
+							Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+						</p>
+					</div>
+					<div class="advantages__item">
+						<div class="advantages__title">Меняет мир вокруг</div>
+						<p>
+							Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+						</p>
+					</div>
+					<div class="advantages__item">
+						<div class="advantages__title">Заводит новых друзей</div>
+						<p>
+							Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+						</p>
+					</div>
+				</div>
+				<footer class="advantages__footer">
+				</footer>
+			</section>
+			<section class="reviews">
+				<h2 class="reviews__title visually-hidden">Отзывы о Pink</h2>
+				<div class="reviews__wrapper slider">
+					<input class="slider__input" type="radio" name="reviews" id="review-slider-input-1" checked>
+					<input class="slider__input" type="radio" name="reviews" id="review-slider-input-2">
+					<input class="slider__input" type="radio" name="reviews" id="review-slider-input-3">
+					<ul class="reviews__list">
+						<li class="reviews__item reviews__item--first-slide slider__item">
+							<div class="reviews__person-name">Николай Петров</div>
+							<p>
+								«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+								серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+								фотографии!»
+							</p>
+						</li>
+						<li class="reviews__item reviews__item--first-slide slider__item">
+							<div class="reviews__person-name">Владимир Зайчиков</div>
+							<p>
+								«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+								серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+								фотографии!»
+							</p>
+						</li>
+						<li class="reviews__item reviews__item--first-slide slider__item">
+							<div class="reviews__person-name">Вера Пупочкина</div>
+							<p>
+								«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+								серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+								фотографии!»
+							</p>
+						</li>
+					</ul>
+					<div class="reviews__toggles slider__toggles">
+						<label class="slider__toggle" for="review-slider-input-1">1</label>
+						<label class="slider__toggle" for="review-slider-input-2">2</label>
+						<label class="slider__toggle" for="review-slider-input-3">3</label>
+					</div>
+				</div>
+			</section>
+			<section class="prices">
+				<h2 class="prices__title visually-hidden">Стоимость Pink</h2>
+				<div class="prices__wrapper slider">
+					<input class="slider__input" type="radio" name="reviews" id="prices-slider-input-1" checked>
+					<input class="slider__input" type="radio" name="reviews" id="prices-slider-input-2">
+					<input class="slider__input" type="radio" name="reviews" id="prices-slider-input-3">
+					<ul class="prices__list">
+						<li class="prices__item prices__item--first-slide slider__item">
+							<div class="prices__head">
+								<div class="prices__label prices__label--hit"></div>
+								<div class="prices__package-name">Стандарт</div>
+								<span class="prices__main-price">3,99 USD</span>
+							</div>
+							<ul class="prices__option-list">
+								<li class="prices__option prices__option--included">
+									Розовый фильтр
+								</li>
+								<li class="prices__option prices__option--included">
+									Смайлики
+								</li>
+								<li class="prices__option prices__option--not-included">
+									Комментарии
+								</li>
+							</ul>
+						</li>
+						<li class="prices__item prices__item--first-slide slider__item">
+							<div class="prices__head">
+								<div class="prices__label prices__label--hit"></div>
+								<div class="prices__package-name">Пробный</div>
+								<span class="prices__main-price">1 USD</span>
+							</div>
+							<ul class="prices__option-list">
+								<li class="prices__option prices__option--included">
+									Розовый фильтр
+								</li>
+								<li class="prices__option prices__option--not-included">
+									Смайлики
+								</li>
+								<li class="prices__option prices__option--not-included">
+									Комментарии
+								</li>
+							</ul>
+						</li>
+						<li class="prices__item prices__item--first-slide slider__item">
+							<div class="prices__head">
+								<div class="prices__label prices__label--hit"></div>
+								<div class="prices__package-name">Все включено</div>
+								<span class="prices__main-price">6 USD</span>
+							</div>
+							<ul class="prices__option-list">
+								<li class="prices__option prices__option--included">
+									Розовый фильтр
+								</li>
+								<li class="prices__option prices__option--not-included">
+									Смайлики
+								</li>
+								<li class="prices__option prices__option--not-included">
+									Комментарии
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="prices__toggles slider__toggles">
+						<label class="slider__toggle" for="prices-slider-input-1">1</label>
+						<label class="slider__toggle" for="prices-slider-input-2">2</label>
+						<label class="slider__toggle" for="prices-slider-input-3">3</label>
+					</div>
+				</div>
+			</section>
+			<section class="contacts">
+				<h2 class="contacts__title visually-hidden">Контакты для связи</h2>
+				<header class="contacts__header">
+					Остались вопросы? Свяжитесь с нами!
+				</header>
+				<div class="contacts__list">
+					<div class="contacts__item">
+						<div class="contacts__title">Поднимает настроение</div>
+						<span class="contacts__contact-point">
+							Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+						</span>
+					</div>
+					<div class="contacts__item">
+						<div class="contacts__title">Меняет мир вокруг</div>
+						<span class="contacts__contact-point">
+							Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+						</span>
+					</div>
+					<div class="contacts__item">
+						<div class="contacts__title">Заводит новых друзей</div>
+						<span class="contacts__contact-point">
+							Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+						</span>
+					</div>
+				</div>
+				<footer class="contacts__map">
+				</footer>
+			</section>
+		</main>
+	</body>
 </html>
