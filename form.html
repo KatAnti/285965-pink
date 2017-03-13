@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Пинк</title>
+		<link href="css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
@@ -30,7 +32,7 @@
 				</header>
 			</section>
 			<form class="form" action="https://echo.htmlacademy.ru" method="get">
-				<p>
+				<p class="form__intro-text">
 					Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль
 					на вашу бонусную карту! 
 				</p>
@@ -42,7 +44,7 @@
 					<label class="form__text-label" for="patronymic">Отчество:</label>
 					<input id="patronymic" class="form__text-input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
 				</fieldset>
-				<fieldset class="form__fields competitive-form__fields--achievements">
+				<fieldset class="form__fields form__fields--achievements">
 					<legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
 					<input id="shark" class="form__checkbox" type="checkbox" name="shark" value="Selfie width shark">
 					<label class="form__label" for="shark">Сделал селфи с акулой</label>
@@ -63,7 +65,7 @@
 					<label class="form__text-label" for="mail">адрес почты</label>
 					<input id="mail" class="form__text-input" type="text" name="mail" placeholder="Введите почту *" required>
 				</fieldset>
-				<fieldset class="form__fields competitive-form__fields--apps">
+				<fieldset class="form__fields form__fields--apps">
 					<legend class="form__title">С каким приложением путешествовали?</legend>
 					<input id="pink-ios" class="form__radio" type="radio" name="pink-ios" value="Pink iOS">
 					<label class="form__label" for="pink-ios">Pink для iOS</label>
