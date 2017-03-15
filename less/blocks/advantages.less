@@ -1,26 +1,127 @@
 .advantages {
 	background-color: @bg-grey;
-	.side-paddings();
+}
+
+.advantages__wrapper {
+	padding-bottom: 300px;
+	padding-top: 25px;
+	position: relative;
+	.container();
+}
+
+.advantages__header {
+	padding-top: 40px;
+	padding-bottom: 30px;
+	background-color: #ffffff;
+	.middle_titles();
+	text-align: center;
+}
+
+.advantages__title {
+	.small_titles()
+}
+
+.advantages__list {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+	.list();
+}
+
+.advantages__mockups {
+	position: absolute;
+	bottom: 0;
+	width: 157px;
+	margin-left: -78px;
+	left: 50%;
+	background-image: url(../img/iphone-screen-mobile@1x.png);
+	height: 275px;
+}
+
+@media @tablet-width {
 	
-	&__header {
-		padding-top: 40px;
-		padding-bottom: 30px;
-		.middle_titles();
+	.advantages__header p:nth-of-type(1) {
+		margin-bottom: 0;
 	}
 	
-	&__title {
-		.small_titles()
+	.advantages__header p:nth-of-type(2) {
+		width: 430px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0;
 	}
 	
-	&__list {
-		padding-top: 40px;
-		padding-bottom: 40px;
+	.advantages__mockups {
+		top: -40px;
+		left: 0;
+		margin: 0;
 	}
 	
-	&__footer {
-		background-image: url("../img/iphone-screen-mobile@1x.png");
-		background-position: center;
+	.advantages__list {
+		text-align: left;
+		margin-left: 300px;
+	}
+	
+	.advantages__wrapper {
+		padding-bottom: 25px;
+	}
+	
+}
+
+@media @desktop-width {
+	
+	.advantages__wrapper {
+		padding-top: 200px;
+	}
+	
+	.advantages__list {
+		margin-left: 0;
+		padding-left: 10px;
+	}
+	
+	.advantages__mockups {
+		top: -90px;
+		left: 0;
+		right: 0;
+		width: 820px;
+		margin: 0 auto;
 		background-repeat: no-repeat;
-		height: 275px;
+		background-position: top right;
+		
+		&::before,
+		&::after {
+			content: " ";
+			position: absolute;
+			bottom: 0;
+			display: block;
+			width: 157px;
+			height: 275px;
+			background-image: url(../img/iphone-screen-mobile@1x.png);
+		}
+		
+		&::before {
+			left: 0;
+		}
+		
+		&::after {
+			left: 50%;
+			margin-left: -78px;
+		}
+	}
+	
+	.advantages__header {
+		padding-bottom: 150px;
+	}
+	
+	.advantages__item {
+		display: inline-block;
+		vertical-align: top;
+		width: 249px;
+		margin-right: 83px;
+		text-align: center;
+		
+		&:last-of-type {
+			margin-right: 0;
+		}
 	}
 }

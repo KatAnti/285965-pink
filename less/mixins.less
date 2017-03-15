@@ -1,9 +1,27 @@
+.container() {
+	width: 280px;
+	margin: 0 auto;
+	
+	@media @tablet-width {
+		width: 620px;
+	}
+	
+	@media @desktop-width {
+		width: 940px;
+	}
+}
+
 .main-text() {
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 24px;
 	color: @text-color;
+	
+	@media @desktop-width {
+		font-size: 18px;
+		line-height: 30px;
+	}
 }
 
 .list() {
@@ -29,14 +47,26 @@
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: bold;
-	color: darken(@text-color, 100%);
+	color: #000000;
+	
+	@media @desktop-width {
+		font-size: 30px;
+		line-height: 30px;
+	}
 }
 
 .middle_titles() {
 	font-size: 24px;
-	line-height: 28px;
-	color: darken(@text-color, 6%);
+	line-height: 1.2;
 	font-weight: 300;
+	
+	@media @tablet-width {
+		font-size: 40px;
+	}
+	
+	@media @desktop-width {
+		font-size: 50px;
+	}
 }
 
 .contact-link() {

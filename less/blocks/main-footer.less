@@ -1,4 +1,38 @@
 .main-footer {
 	padding-bottom: 30px;
-	.side-paddings()
+	text-align: center;
+	
+	&--index {
+		display: none;
+	}
 }
+
+.main-footer__logo {
+	width: 150px;
+	height: 40px;
+}
+
+.main-footer__wrapper {
+	.container();
+}
+
+.main-footer__copyrights {
+	width: 140px;
+	font-size: 14px;
+}
+
+@media @tablet-width {
+	
+	.main-footer--index {
+		display: block;
+	}
+	
+	.main-footer__logo {
+		float: left;
+	}
+	
+	.main-footer__copyrights {
+		float: right;
+	}
+}
+
