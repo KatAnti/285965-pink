@@ -1,6 +1,17 @@
 .photo-post__text {
 	padding: 15px;
 	background: @bg-grey;
+	&--panorama {
+		.container();
+		width: 250px;
+	}
+}
+
+.photo-post{
+	width: 280px;
+	&--panorama {
+		width: 100%;
+	}
 }
 
 .photo-post__person-name {
@@ -10,4 +21,22 @@
 .photo-post__time {
 	font-size: 12px;
 	text-transform: uppercase;
+}
+
+@media @tablet-width {
+	
+	.photo-post {
+		flex-basis: 300px;
+	}
+	
+	.photo-post__text--panorama {
+		width: 590px;
+	}
+}
+
+@media @desktop-width {
+	
+	.photo-post__text--panorama {
+		width: 910px;
+	}
 }

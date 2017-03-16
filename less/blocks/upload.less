@@ -1,7 +1,33 @@
 .upload {
-	.side-paddings();
 	padding-top: 20px;
 	padding-bottom: 20px;
 	background-color: @bg-grey;
 }
 
+.upload__wrapper {
+	.container();
+	display: flex;
+	flex-direction: column;
+}
+
+.upload__photo-preview {
+	width: 280px;
+	height: 375px;
+}
+
+@media @tablet-width {
+	.upload__wrapper {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+	.upload__controls {
+		flex-basis: 50%;
+	}
+}
+
+@media @desktop-width {
+	.upload__wrapper {
+		justify-content: space-around;
+	}
+}
