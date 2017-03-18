@@ -2,99 +2,119 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>HTML Academy: Пинк</title>
 		<link href="css/style.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
 			<h1 class="visually-hidden">Pink - лучшее приложение для обмена фотографиями</h1>
-			<a class="main-header__logo">
-				<img src="img/http://placehold.it/150x100" width="75" height="23" alt="Логотип Pink">
-			</a>
-			<nav class="main-nav main-nav--closed main-nav--nojs">
-				<div class="main-nav__open-btn">Показать меню</div>
-				<div class="main-nav__close-btn">Скрыть меню</div>
-				<div class="main-nav__wrap">
-					<ul class="main-nav__list">
-						<li class="main-nav__item"><a>Главная</a></li>
-						<li class="main-nav__item"><a href="#">Фотографии</a></li>
-						<li class="main-nav__item"><a href="#">Конкурс</a></li>
-						<li class="main-nav__item"><a href="#">HTML Academy</a></li>
-					</ul>
+			<div class="main-header__wrapper">
+				<div class="main-header__logo-wrapper">
+					<a class="main-header_logo">
+						<img src="https://placeholdit.imgix.net/~text?txtsize=14&txt=147%C3%9740&w=147&h=40" alt="Логотип Pink">
+					</a>
+					<div class="main-header__menu-toggle main-header__menu-open main-header__menu-close">Показать меню</div>
 				</div>
-			</nav>
+				<nav class="main-nav main-nav--closed main-nav--nojs">
+					<div class="main-nav__wrap">
+						<ul class="main-nav__list">
+							<li class="main-nav__item"><a>Главная</a></li>
+							<li class="main-nav__item"><a href="#">Фотографии</a></li>
+							<li class="main-nav__item"><a href="#">Конкурс</a></li>
+							<li class="main-nav__item"><a href="#">HTML Academy</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
 		</header>
 		<main>
 			<section class="intro">
-				<header class="intro__header intro__header--small">
-					<h2 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
-				</header>
+				<div class="intro__bg intro__bg--center">
+					<div class="intro__wrapper">
+						<h2 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+					</div>
+				</div>
 			</section>
 			<form class="form" action="https://echo.htmlacademy.ru" method="get">
 				<p class="form__intro-text">
 					Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль
 					на вашу бонусную карту! 
 				</p>
-				<fieldset class="form__fields">
-					<label class="form__text-label" for="surname">Фамилия:</label>
-					<input id="surname" class="form__text-input" type="text" name="surname" placeholder="Укажите фамилию *" required>
-					<label class="form__text-label" for="name">Имя:</label>
-					<input id="name" class="form__text-input" type="text" name="name" placeholder="Введите ваше имя *" required>
-					<label class="form__text-label" for="patronymic">Отчество:</label>
-					<input id="patronymic" class="form__text-input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
-				</fieldset>
-				<fieldset class="form__fields form__fields--achievements">
-					<legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
-					<input id="shark" class="form__checkbox" type="checkbox" name="shark" value="Selfie width shark">
-					<label class="form__label" for="shark">Сделал селфи с акулой</label>
-					<input id="beach" class="form__checkbox" type="checkbox" name="beach" value="Burned on the beach">
-					<label class="form__label" for="beach">Обгорел на пляже</label>
-					<input id="norris" class="form__checkbox" type="checkbox" name="norris" value="Chuck Norris">
-					<label class="form__label" for="norris">Видел Чака Норриса</label>
-					<input id="souvenirs" class="form__checkbox" type="checkbox" name="souvenirs" value="Bought souvenirs">
-					<label class="form__label" for="souvenirs">Накупил сувениров</label>
-					<input id="tower" class="form__checkbox" type="checkbox" name="tower" value="Keep tower">
-					<label class="form__label" for="tower">Удержал башню</label>
-					<input id="hotel" class="form__checkbox" type="checkbox" name="hotel" value="Destroy hotel">
-					<label class="form__label" for="hotel">Разгромил отель</label>
-				</fieldset>
-				<fieldset class="form__fields">
-					<label class="form__text-label" for="phone">Номер телефона</label>
-					<input id="phone" class="form__text-input" type="text" name="phone" placeholder="Номер, пожалуйста">
-					<label class="form__text-label" for="mail">адрес почты</label>
-					<input id="mail" class="form__text-input" type="text" name="mail" placeholder="Введите почту *" required>
-				</fieldset>
-				<fieldset class="form__fields form__fields--apps">
-					<legend class="form__title">С каким приложением путешествовали?</legend>
-					<input id="pink-ios" class="form__radio" type="radio" name="pink-ios" value="Pink iOS">
-					<label class="form__label" for="pink-ios">Pink для iOS</label>
-					<input id="pink-android" class="form__radio" type="radio" name="pink-android" value="Pink Android">
-					<label class="form__label" for="pink-android">Pink на Android</label>
-					<input id="pink-windows" class="form__radio" type="radio" name="pink-windows" value="Windows Phone">
-					<label class="form__label" for="pink-windows">Windows Phone</label>
-				</fieldset>
-				<fieldset class="form__fields">
-					<legend class="form__title">Опишите свои эмоции</legend>
-					<textarea class="form__text-emotions" name="emotions" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-				</fieldset>
-				<input class="buttons buttons--competitive-send" type="submit" value="Отправить форму">
-				<div class="form__legend"><span>*</span> — обязательные поля</div>
+				<div class="form__person">
+					<fieldset class="form__fields form__fields--person">
+						<label class="form__text-label" for="surname">Фамилия:</label>
+						<input id="surname" class="form__text-input" type="text" name="surname" placeholder="Укажите фамилию *" required>
+						<label class="form__text-label" for="name">Имя:</label>
+						<input id="name" class="form__text-input" type="text" name="name" placeholder="Введите ваше имя *" required>
+						<label class="form__text-label" for="patronymic">Отчество:</label>
+						<input id="patronymic" class="form__text-input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+					</fieldset>
+				</div>
+				<div class="form__achievements">
+					<fieldset class="form__fields form__fields--achievements">
+						<legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
+						<input id="shark" class="form__checkbox" type="checkbox" name="shark" value="Selfie width shark">
+						<label class="form__label" for="shark">Сделал селфи с акулой</label>
+						<input id="beach" class="form__checkbox" type="checkbox" name="beach" value="Burned on the beach">
+						<label class="form__label" for="beach">Обгорел на пляже</label>
+						<input id="norris" class="form__checkbox" type="checkbox" name="norris" value="Chuck Norris">
+						<label class="form__label" for="norris">Видел Чака Норриса</label>
+						<input id="souvenirs" class="form__checkbox" type="checkbox" name="souvenirs" value="Bought souvenirs">
+						<label class="form__label" for="souvenirs">Накупил сувениров</label>
+						<input id="tower" class="form__checkbox" type="checkbox" name="tower" value="Keep tower">
+						<label class="form__label" for="tower">Удержал башню</label>
+						<input id="hotel" class="form__checkbox" type="checkbox" name="hotel" value="Destroy hotel">
+						<label class="form__label" for="hotel">Разгромил отель</label>
+					</fieldset>
+				</div>
+				<div class="form__contact">
+					<fieldset class="form__fields form__fields--contact">
+						<legend class="form__title form__title--contact">Контактная информация</legend>
+						<label class="form__text-label" for="phone">Номер телефона</label>
+						<input id="phone" class="form__text-input" type="text" name="phone" placeholder="Номер, пожалуйста">
+						<label class="form__text-label" for="mail">адрес почты</label>
+						<input id="mail" class="form__text-input" type="text" name="mail" placeholder="Введите почту *" required>
+					</fieldset>
+				</div>
+				<div class="form__apps">
+					<fieldset class="form__fields form__fields--apps">
+						<legend class="form__title">С каким приложением путешествовали?</legend>
+						<input id="pink-ios" class="form__radio" type="radio" name="pink-ios" value="Pink iOS">
+						<label class="form__label" for="pink-ios">Pink для iOS</label>
+						<input id="pink-android" class="form__radio" type="radio" name="pink-android" value="Pink Android">
+						<label class="form__label" for="pink-android">Pink на Android</label>
+						<input id="pink-windows" class="form__radio" type="radio" name="pink-windows" value="Windows Phone">
+						<label class="form__label" for="pink-windows">Windows Phone</label>
+					</fieldset>
+				</div>
+				<div class="form__emotions">
+					<fieldset class="form__fields">
+						<legend class="form__title">Опишите свои эмоции</legend>
+						<textarea class="form__text-emotions" name="emotions" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+					</fieldset>
+				</div>
+				<div class="form__button-wrapper">
+					<input class="buttons buttons--competitive-send" type="submit" value="Отправить форму">
+					<div class="form__legend"><span>*</span> — обязательные поля</div>
+				</div>
 			</form>
 		</main>
-		<footer class="main-footer">
-			<a class="main-footer__logo">
-				<img src="img/http://placehold.it/150x100" width="147" height="40" alt="Логотип Pink">
-			</a>
-			<ul class="social-links">
-				<li class="social-link social-link--twitter"><a href="#">Мы в Twitter</a></li>
-				<li class="social-link social-link--facebook"><a href="#">Мы в Facebook</a></li>
-				<li class="social-link social-link--youtube"><a href="#">Мы в YouTube</a></li>
-			</ul>
-			<span class="main-footer__copyrights">
-				Разработано
-				<a class="main-footer__developer-logo" href="#"></a>
-			</span>
+		<footer class="main-footer main-footer">
+			<div class="main-footer__wrapper">
+				<a class="main-footer__logo">
+					<img src="img/http://placehold.it/150x40" width="150" height="40" alt="Логотип Pink">
+				</a>
+				<ul class="social-links">
+					<li class="social-link social-link--twitter"><a href="#">Мы в Twitter</a></li>
+					<li class="social-link social-link--facebook"><a href="#">Мы в Facebook</a></li>
+					<li class="social-link social-link--youtube"><a href="#">Мы в YouTube</a></li>
+				</ul>
+				<span class="main-footer__copyrights">
+					Разработано
+					<a class="main-footer__developer-logo" href="#"></a>
+				</span>
+			</div>
 		</footer>
 	</body>
 </html>

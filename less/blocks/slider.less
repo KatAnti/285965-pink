@@ -1,0 +1,30 @@
+.slider__input {
+	display: none;
+}
+
+.slider__toggles {
+	width: 75px;
+	margin: 20px auto 0;
+}
+
+.slider__arrow {
+	display: none;
+	position: absolute;
+	top: 50%;
+	cursor: pointer;
+	
+	&--prev {
+		left: 0;
+	}
+	
+	&--next {
+		right: 0;
+	}
+}
+
+@media @desktop-width {
+	
+	.slider__arrow {
+		display: block;
+	}
+}
