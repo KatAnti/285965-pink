@@ -7,245 +7,214 @@
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
-		<header class="main-header">
-			<h1 class="visually-hidden">Pink - лучшее приложение для обмена фотографиями</h1>
-			<div class="main-header__wrapper">
-				<div class="main-header__logo-wrapper">
-					<a class="main-header_logo">
-						<img src="https://placeholdit.imgix.net/~text?txtsize=14&txt=147%C3%9740&w=147&h=40" alt="Логотип Pink">
-					</a>
-					<div class="main-header__menu-toggle main-header__menu-open main-header__menu-close">Показать меню</div>
-				</div>
-				<nav class="main-nav main-nav--closed main-nav--nojs">
-					<div class="main-nav__wrap">
-						<ul class="main-nav__list">
-							<li class="main-nav__item"><a>Главная</a></li>
-							<li class="main-nav__item"><a href="#">Фотографии</a></li>
-							<li class="main-nav__item"><a href="#">Конкурс</a></li>
-							<li class="main-nav__item"><a href="#">HTML Academy</a></li>
-						</ul>
+		<div class="header-back">
+			<header class="main-header">
+				<h1 class="visually-hidden">Pink - лучшее приложение для обмена фотографиями</h1>
+				<div class="main-header__wrapper">
+					<div class="main-header__logo-wrapper">
+						<a class="main-header_logo">
+							<img src="https://placeholdit.imgix.net/~text?txtsize=14&txt=147%C3%9740&w=147&h=40" alt="Логотип Pink">
+						</a>
+						<button class="main-header__menu-toggle main-header__menu-open" type="button">Открыть меню</button>
 					</div>
-				</nav>
-			</div>
-		</header>
-		<main>
+					<nav class="main-nav main-nav--closed main-nav--nojs">
+						<div class="main-nav__wrap">
+							<ul class="main-nav__list">
+								<li class="main-nav__item"><a>Главная</a></li>
+								<li class="main-nav__item"><a href="#">Фотографии</a></li>
+								<li class="main-nav__item"><a href="#">Конкурс</a></li>
+								<li class="main-nav__item"><a href="#">HTML Academy</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</header>
 			<section class="intro">
 				<h2 class="intro__title visually-hidden">Скачать Pink</h2>
-				<div class="intro__bg">
-					<div class="intro__wrapper intro__wrapper--index">
-						<div class="intro__mockup"></div>
-						<div class="intro__info-wrap">
-							<p class="intro__slogan">Взгляните на жизнь иначе!</p>
-							<a class="buttons buttons--download-app" href="#">Скачать приложение</a>
-							<ul class="markets-list">
-								<li class="markets-list__item markets-list__item--ios">
-									<a href="#">AppStore</a>
-								</li>
-								<li class="markets-list__item markets-list__item--android">
-									<a href="#">Google Play</a>
-								</li>
-								<li class="markets-list__item markets-list__item--microsoft">
-									<a href="#">Microsoft Store</a>
-								</li>
-							</ul>
-							<div class="intro__available">
+					<div class="intro__slogan">Взгляните на жизнь иначе!</div>
+					<div class="intro__info-wrap">
+						<a class="buttons buttons--download-app" href="#">Скачать приложение</a>
+						<ul class="markets-list">
+							<li class="markets-list__item markets-list__item--ios">
+								<a href="#">App</a>
+							</li>
+							<li class="markets-list__item markets-list__item--android">
+								<a href="#">Google</a>
+							</li>
+							<li class="markets-list__item markets-list__item--microsoft">
+								<a href="#">Microsoft</a>
+							</li>
+						</ul>
+						<div class="intro__available">
 							<p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
-							</div>
 						</div>
 					</div>
-				</div>
 			</section>
-			<section class="advantages">
-				<h2 class="advantages__block-title visually-hidden">Преимущества Pink</h2>
-				<header class="advantages__header">
-					<p>Устали от серости мегаполиса?</p>
-					<p>Нам есть, что вам  предложить!</p>
-				</header>
-				<div class="advantages__wrapper">
-					<div class="advantages__list">
-						<div class="advantages__item">
-							<div class="advantages__title">Поднимает настроение</div>
-							<p>
-								Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-							</p>
-						</div>
-						<div class="advantages__item">
-							<div class="advantages__title">Меняет мир вокруг</div>
-							<p>
-								Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-							</p>
-						</div>
-						<div class="advantages__item">
-							<div class="advantages__title">Заводит новых друзей</div>
-							<p>
-								Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
-							</p>
-						</div>
-					</div>
-					<div class="advantages__mockups">
-					</div>
-				</div>
-			</section>
-			<section class="effect">
-				<h2 class="visually-hidden">Положительный эффект</h2>
-				<div class="effect__wrapper">
-					<div class="effect__item">
-						<div class="effect__title">Эффект на 24 часа!</div>
+		</div>
+		<section class="advantages">
+			<h2 class="advantages__block-title visually-hidden">Преимущества Pink</h2>
+			<header class="advantages__header">
+				<p>Устали от серости мегаполиса?</p>
+				<p>Нам есть, что вам  предложить!</p>
+			</header>
+			<div class="advantages__wrapper">
+				<div class="advantages__list">
+					<div class="advantages__item advantages__item--mood">
+						<div class="advantages__title">Поднимает настроение</div>
 						<p>
-							Британские ученые провели исследования и доказали, 
-							что положительный эффект от использования приложения длится целые сутки!
+							Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
 						</p>
-						<a class="effect__link" href="#">Узнать больше об исследовании</a>
+					</div>
+					<div class="advantages__item advantages__item--change">
+						<div class="advantages__title">Меняет мир вокруг</div>
+						<p>
+							Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+						</p>
+					</div>
+					<div class="advantages__item advantages__item--friends">
+						<div class="advantages__title">Заводит новых друзей</div>
+						<p>
+							Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+						</p>
 					</div>
 				</div>
-			</section>
-			<section class="reviews">
-				<h2 class="reviews__title visually-hidden">Отзывы о Pink</h2>
-				<div class="reviews__wrapper slider">
-					<input class="slider__input" type="radio" name="reviews" id="review-slider-input-1" checked>
-					<input class="slider__input" type="radio" name="reviews" id="review-slider-input-2">
-					<input class="slider__input" type="radio" name="reviews" id="review-slider-input-3">
-					<ul class="reviews__list">
-						<li class="reviews__item reviews__item--first-slide slider__item" id="reviews-slide1">
-							<div class="reviews__person-info">
-								<div class="reviews__person-name">Николай Петров</div>
-								<span>25 лет, водитель трамвая</span>
-							</div>
-							<p>
-								«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
-								серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-								фотографии!»
-							</p>
-						</li>
-						<!--<li class="reviews__item reviews__item--first-slide slider__item" id="reviews-slide2">
-							<div class="reviews__person-name">Владимир Зайчиков</div>
-							<p>
-								«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
-								серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-								фотографии!»
-							</p>
-						</li>
-						<li class="reviews__item reviews__item--first-slide slider__item" id="reviews-slide3">
-							<div class="reviews__person-name">Вера Пупочкина</div>
-							<p>
-								«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
-								серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-								фотографии!»
-							</p>
-						</li>-->
-					</ul>
-					<div class="slider__arrow slider__arrow--prev">Пред.</div>
-					<div class="slider__arrow slider__arrow--next">След.</div>
-					<div class="reviews__toggles slider__toggles">
-						<label class="slider__toggle" for="review-slider-input-1">1</label>
-						<label class="slider__toggle" for="review-slider-input-2">2</label>
-						<label class="slider__toggle" for="review-slider-input-3">3</label>
-					</div>
+			</div>
+		</section>
+		<section class="effect">
+			<h2 class="visually-hidden">Положительный эффект</h2>
+			<div class="container">
+				<div class="effect__item">
+					<div class="effect__title">Эффект на 24 часа!</div>
+					<p>
+						Британские ученые провели исследования и доказали, 
+						что положительный эффект от использования приложения длится целые сутки!
+					</p>
+					<a class="effect__link" href="#">Узнать больше об исследовании</a>
 				</div>
-			</section>
-			<section class="prices">
-				<h2 class="prices__title visually-hidden">Стоимость Pink</h2>
-				<div class="prices__wrapper slider">
-					<input class="slider__input" type="radio" name="reviews" id="prices-slider-input-1" checked>
-					<input class="slider__input" type="radio" name="reviews" id="prices-slider-input-2">
-					<input class="slider__input" type="radio" name="reviews" id="prices-slider-input-3">
-					<ul class="prices__list">
-						<li class="prices__item prices__item--first-slide slider__item">
-							<div class="prices__head">
-								<div class="prices__label prices__label--hit"></div>
-								<div class="prices__package-name">Стандарт</div>
-								<span class="prices__main-price">3,99 USD</span>
-							</div>
-							<ul class="prices__option-list">
-								<li class="prices__option prices__option--included">
-									Розовый фильтр
-								</li>
-								<li class="prices__option prices__option--included">
-									Смайлики
-								</li>
-								<li class="prices__option prices__option--not-included">
-									Комментарии
-								</li>
-							</ul>
-						</li>
-						<li class="prices__item prices__item--first-slide slider__item">
-							<div class="prices__head">
-								<div class="prices__label prices__label--hit"></div>
-								<div class="prices__package-name">Пробный</div>
-								<span class="prices__main-price">1 USD</span>
-							</div>
-							<ul class="prices__option-list">
-								<li class="prices__option prices__option--included">
-									Розовый фильтр
-								</li>
-								<li class="prices__option prices__option--not-included">
-									Смайлики
-								</li>
-								<li class="prices__option prices__option--not-included">
-									Комментарии
-								</li>
-							</ul>
-						</li>
-						<li class="prices__item prices__item--first-slide slider__item">
-							<div class="prices__head">
-								<div class="prices__label prices__label--hit"></div>
-								<div class="prices__package-name">Все включено</div>
-								<span class="prices__main-price">6 USD</span>
-							</div>
-							<ul class="prices__option-list">
-								<li class="prices__option prices__option--included">
-									Розовый фильтр
-								</li>
-								<li class="prices__option prices__option--not-included">
-									Смайлики
-								</li>
-								<li class="prices__option prices__option--not-included">
-									Комментарии
-								</li>
-							</ul>
-						</li>
-					</ul>
-					<div class="prices__toggles slider__toggles">
-						<label class="slider__toggle" for="prices-slider-input-1">1</label>
-						<label class="slider__toggle" for="prices-slider-input-2">2</label>
-						<label class="slider__toggle" for="prices-slider-input-3">3</label>
-					</div>
-				</div>
-			</section>
-			<section class="contacts">
-				<h2 class="contacts__title visually-hidden">Контакты для связи</h2>
-				<div class="contacts__wrapper">
-					<header class="contacts__header">
-						Остались вопросы? Свяжитесь с нами!
-					</header>
-					<div class="contacts__list">
-						<div class="contacts__item">
-							<div class="contacts__title">Звоните:</div>
-							<a class="contacts__contact-point" href="tel:+78125556666">
-								+7 (812) 555-66-66
-							</a>
+			</div>
+		</section>
+		<section class="reviews">
+			<h2 class="reviews__title visually-hidden">Отзывы о Pink</h2>
+			<div class="reviews__wrapper slider">
+				<input class="slider__input" type="radio" name="reviews" id="review-slider-input-1" checked>
+				<input class="slider__input" type="radio" name="reviews" id="review-slider-input-2">
+				<input class="slider__input" type="radio" name="reviews" id="review-slider-input-3">
+				<ul class="reviews__list">
+					<li class="reviews__item reviews__item--first-slide slider__item" id="reviews-slide1">
+						<div class="reviews__person-info">
+							<div class="reviews__person-name">Николай Петров</div>
+							<span>25 лет, водитель трамвая</span>
 						</div>
-						<div class="contacts__item">
-							<div class="contacts__title">Пишите:</div>
-							<a class="contacts__contact-point" href="mailto:+78125556666">
-								mail@htmlacademy.ru
-							</a>
-						</div>
-						<div class="contacts__item">
-							<div class="contacts__title">Приезжайте в гости:</div>
-							<span class="contacts__contact-point">
-								ул. Большая Конюшенная, 19/8
-							</span>
-						</div>
+						<p>
+							«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+							серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+							фотографии!»
+						</p>
+					</li>
+					<!--<li class="reviews__item reviews__item--first-slide slider__item" id="reviews-slide2">
+						<div class="reviews__person-name">Владимир Зайчиков</div>
+						<p>
+							«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+							серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+							фотографии!»
+						</p>
+					</li>
+					<li class="reviews__item reviews__item--first-slide slider__item" id="reviews-slide3">
+						<div class="reviews__person-name">Вера Пупочкина</div>
+						<p>
+							«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+							серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+							фотографии!»
+						</p>
+					</li>-->
+				</ul>
+				<div class="slider__arrow slider__arrow--prev">Пред.</div>
+				<div class="slider__arrow slider__arrow--next">След.</div>
+				<div class="reviews__toggles slider__toggles">
+					<label class="slider__toggle" for="review-slider-input-1">1</label>
+					<label class="slider__toggle" for="review-slider-input-2">2</label>
+					<label class="slider__toggle" for="review-slider-input-3">3</label>
+				</div>
+			</div>
+		</section>
+		<section class="prices">
+			<h2 class="prices__title visually-hidden">Стоимость Pink</h2>
+			<div class="prices__wrapper">
+				<table class="prices__options-table">
+					<tr>
+						<th></th>
+						<th class="prices__table-head prices__table-head--base">
+							<div class="prices__package-name">База</div>
+							<span class="prices__main-price">1,99 USD</span>
+						</th>
+						<th class="prices__table-head prices__table-head--standart">
+							<div class="prices__package-name">Стандарт</div>
+							<span class="prices__main-price">3,99 USD</span>
+						</th>
+						<th class="prices__table-head prices__table-head--unlim">
+							<div class="prices__package-name">Анлим</div>
+							<span class="prices__main-price">9,99 USD</span>
+						</th>
+					</tr>
+					<tr>
+						<td class="prices__option prices__option--ttl">Розовый фильтр</td>
+						<td class="prices__option prices__option--included prices__option--filter"></td>
+						<td class="prices__option prices__option--included prices__option--filter"></td>
+						<td class="prices__option prices__option--included prices__option--filter"></td>
+					</tr>
+					<tr>
+						<td class="prices__option prices__option--ttl">Смайлики</td>
+						<td class="prices__option prices__option--not-included prices__option--smiles"></td>
+						<td class="prices__option prices__option--included prices__option--smiles"></td>
+						<td class="prices__option prices__option--included prices__option--smiles"></td>
+					</tr>
+					<tr>
+						<td class="prices__option prices__option--ttl">Комментарии</td>
+						<td class="prices__option prices__option--not-included prices__option--comments"></td>
+						<td class="prices__option prices__option--not-included prices__option--comments"></td>
+						<td class="prices__option prices__option--included prices__option--comments"></td>
+					</tr>
+				</table>
+				<div class="prices__toggles">
+					<label class="prices__toggle">1</label>
+					<label class="prices__toggle">2</label>
+					<label class="prices__toggle">3</label>
+				</div>
+			</div>
+		</section>
+		<section class="contacts">
+			<h2 class="contacts__title visually-hidden">Контакты для связи</h2>
+			<div class="container">
+				<header class="contacts__header">
+					Остались вопросы? Свяжитесь с нами!
+				</header>
+				<div class="contacts__list">
+					<div class="contacts__item contacts__item--phone">
+						<div class="contacts__title">Звоните:</div>
+						<a class="contacts__contact-point" href="tel:+78125556666">
+							+7 (812) 555-66-66
+						</a>
+					</div>
+					<div class="contacts__item contacts__item--mail">
+						<div class="contacts__title">Пишите:</div>
+						<a class="contacts__contact-point" href="mailto:+78125556666">
+							mail@htmlacademy.ru
+						</a>
+					</div>
+					<div class="contacts__item contacts__item--adress">
+						<div class="contacts__title">Приезжайте в гости:</div>
+						<span class="contacts__contact-point">
+							ул. Большая Конюшенная, 19/8
+						</span>
 					</div>
 				</div>
-				<footer class="contacts__map">
-				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=aub-qEyWnmwfzE-zjOY9l8MjTcXvLQFJ&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
-				</footer>
-			</section>
-		</main>
+			</div>
+			<footer class="contacts__map">
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=aub-qEyWnmwfzE-zjOY9l8MjTcXvLQFJ&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+			</footer>
+		</section>
 		<footer class="main-footer main-footer--index">
-			<div class="main-footer__wrapper">
+			<div class="container">
 				<a class="main-footer__logo">
 					<img src="img/http://placehold.it/150x40" width="150" height="40" alt="Логотип Pink">
 				</a>
@@ -260,5 +229,6 @@
 				</span>
 			</div>
 		</footer>
+	<script src="js/app.js"></script>
 	</body>
 </html>
