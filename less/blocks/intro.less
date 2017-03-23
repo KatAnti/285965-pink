@@ -3,9 +3,11 @@
 	flex-direction: column;
 	color: #fff;
 	z-index: 1;
-	background-image: url("../img/iphone-hand-mobile@1x.png");
-	background-position: left 85px;
-	background-repeat: no-repeat;
+	&--mockup {
+		background-image: url("../img/iphone-hand-mobile@1x.png");
+		background-position: left 85px;
+		background-repeat: no-repeat;
+	}
 }
 
 .intro__title {
@@ -73,7 +75,7 @@
 
 @media @desktop-width {
 	.intro {
-	.container();
+		.container();
 	}
 	
 	.intro__slogan {

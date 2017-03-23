@@ -12,10 +12,23 @@
 		border-radius: 30px;
 		margin-bottom: 35px;
 	}
+	&--competitive-send {
+		border: none;
+		background-color: @bg-btn;
+		height: 63px;
+		width: 100%;
+		margin-bottom: 37px;
+		border-radius: 4px;
+		text-transform: uppercase;
+	}
 }
 
 @media @tablet-width {
-	
+	.buttons--competitive-send {
+		width: auto;
+		padding-left: 57px;
+		padding-right: 57px;
+	}
 }
 
 @media @desktop-width {
@@ -23,6 +36,10 @@
 		font-size: 21px;
 		&--download-app {
 			margin-bottom: 65px;
+		}
+		&--competitive-send {
+			margin-bottom: 0;
+			font-size: 18px;
 		}
 	}
 }
