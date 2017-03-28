@@ -21,13 +21,52 @@
 		border-radius: 4px;
 		text-transform: uppercase;
 	}
+	&--post {
+		width: 100%;
+		height: 56px;
+		padding: 15px 0;
+		border: 3px solid @pink;
+		border-radius: 30px;
+		margin-bottom: 13px;
+		color: @pink;
+		background: transparent;
+		&:hover {
+			background: @pink;
+			color: #fff;
+		}
+		&:active {
+			color: fade(#ffffff, 30%);
+		}
+	}
+	&--cancel {
+		width: 100%;
+		height: 56px;
+		padding: 15px 0;
+		border: 3px solid #dddfe0;
+		border-radius: 30px;
+		color: #dddfe0;
+		background: transparent;
+		&:hover {
+			color: #b5b9be;
+			border-color: #b5b9be;
+		}
+		&:active {
+			background: #b5b9be;
+			color: fade(#ffffff, 30%);
+		}
+	}
 }
 
 @media @tablet-width {
-	.buttons--competitive-send {
-		width: auto;
-		padding-left: 57px;
-		padding-right: 57px;
+	.buttons {
+		&--competitive-send {
+			width: auto;
+			padding-left: 57px;
+			padding-right: 57px;
+		}
+		&--post {
+			margin-bottom: 24px;
+		}
 	}
 }
 
@@ -41,5 +80,12 @@
 			margin-bottom: 0;
 			font-size: 18px;
 		}
+		&--post {
+			width: 45%;
+		}
+		&--cancel {
+			width: 45%;
+		}
 	}
+	
 }
