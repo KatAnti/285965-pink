@@ -10,6 +10,7 @@
 
 .reviews__list {
 	.list();
+	margin-bottom: 26px;
 }
 
 .reviews__person-name {
@@ -23,12 +24,17 @@
 .reviews__item {
 	position: relative;
 	text-align: center;
+	line-height: 30px;
 }
 
 @media @tablet-width {
 	
+	.reviews {
+		padding-bottom: 73px;
+	}
+	
 	.reviews__item {
-		padding-bottom: 60px;
+		padding-bottom: 78px;
 		font-size: 18px;
 		line-height: 30px;
 	}
@@ -41,6 +47,7 @@
 	
 	.reviews__person-info span {
 		display: block;
+		font-size: 14px;
 	}
 	
 	.reviews__person-name {
@@ -54,14 +61,28 @@
 		font-size: 24px;
 	}
 	
+	.reviews {
+		padding-top: 57px;
+		padding-bottom: 45px;
+	}
+	
 	.reviews__toggles {
 		display: none;
+	}
+	
+	.reviews__list {
+		margin-bottom: 0;
+	}
+	
+	.reviews__person-info span {
+		font-size: 18px;
 	}
 	
 	.reviews__item {
 		width: 700px;
 		margin: 0 auto;
 		padding-top: 110px;
+		padding-bottom: 78px;
 		&::before {
 			content: " ";
 			position: absolute;

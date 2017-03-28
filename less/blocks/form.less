@@ -4,10 +4,20 @@
 	padding-bottom: 20px;
 }
 
+::-webkit-input-placeholder {color:@text-color;}
+::-moz-placeholder {color:@text-color;}
+:-moz-placeholder {color:@text-color;}
+:-ms-input-placeholder {color:@text-color;}
+
 .form__intro-text {
 	.container();
 	padding-top: 50px;
 	text-align: center;
+	line-height: 30px;
+}
+
+.form__fill-text {
+	display: none;
 }
 
 .form__fields {
@@ -20,14 +30,37 @@
 	&--person {
 		padding-top: 0;
 	}
+	
+	&--achievements {
+		padding-bottom: 15px;
+	}
+	
+	&--apps {
+		padding-bottom: 0;
+	}
+}
+
+.form__flex-wrap {
+	display: flex;
+	flex-direction: column;
 }
 
 .form__achievements {
 	background-color: @bg-grey;
+	padding-top: 38px;
+}
+
+.form__achievements .form__flex-wrap {
+	flex-direction: column;
 }
 
 .form__apps {
 	background-color: @bg-grey;
+	padding-top: 38px;
+}
+
+.form__emotions {
+	padding-top: 38px;
 }
 
 .form__title {
@@ -49,33 +82,76 @@
 	font-size: 14px;
 	line-height: 30px;
 	text-transform: uppercase;
+	padding-left: 22px;
+	margin-bottom: 5px;
 }
 
 .form__text-input {
-	display: block;
 	width: 100%;
+	height: 63px;
+	padding: 0 19px;
+	margin-bottom: 18px;
 	box-sizing: border-box;
 	font-size: 18px;
 	line-height: 30px;
+	border: 2px solid #e5e5e5;
 }
 
 .form__label {
+	position: relative;
 	font-size: 18px;
 	line-height: 30px;
 	font-size: 18px;
 	line-height: 30px;
 	display: block;
 	position: relative;
-	padding-left: 30px;
-	margin-bottom: 15px;
+	padding-left: 67px;
+	margin: 17px 0 35px 0;
+	&--radio {
+		margin-bottom: 45px;
+	}
+}
+
+.form__apps-indicator {
+	position: absolute;
+	top: -4px;
+	left: 0;
+	width: 35px;
+	height: 35px;
+	border: 2px solid #e5e5e5;
+	border-radius: 50%;
+}
+
+.form__radio:checked + label::before {
+	content: " ";
+	position: absolute;
+	top: 8px;
+	left: 12px;
+	display: block;
+	width: 15px;
+	height: 15px;
+	background: @pink;
+	border-radius: 50%;
+}
+
+.form__achievements-indicator {
+	position: absolute;
+	top: -4px;
+	left: 0;
+	width: 35px;
+	height: 35px;
+	background: #ffffff;
+	border: 2px solid #e5e5e5;
 }
 
 .form__checkbox {
 	position: absolute;
+	display: none;
 }
 
 .form__radio {
 	position: absolute;
+	display: none;
 }
 
 .form__container {
@@ -85,30 +161,56 @@
 }
 
 .form__text-emotions {
+	box-sizing: border-box;
+	padding: 15px;
 	width: 100%;
+	height: 200px;
+	font-size: 18px;
+	line-height: 30px;
 }
 
 .form__button-wrapper {
+	display: flex;
+	flex-direction: column;
 	.container();
 	text-align: center;
+	margin-top: 9px;
+	text-transform: uppercase;
 }
 
 .form__person {
-	padding-top: 25px;
+	padding-top: 32px;
 }
 
-.form__title {
-	padding-top: 25px;
+.form__legend span:first-of-type {
+	color: @pink;
+}
+
+.form__legend span:last-of-type {
+	display: none;
 }
 
 @media @tablet-width {
 	
-	.form {
-		.container();
+	.form__flex-wrap {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between
 	}
 	
-	.form__fields {
-		width: auto;
+	.form__intro-text {
+		width: 535px;
+		font-size: 18px;
+		padding-top: 93px;
+	}
+	
+	.form__fill-text {
+		display: inline;
+	}
+	
+	.form {
+		.container();
+		padding-bottom: 14px;
 	}
 	
 	.form__achievements {
@@ -120,23 +222,108 @@
 	}
 	
 	.form__fields {
+		width: auto;
 		border: 2px solid #e5e5e5;
 		
-		&&--person {
+		&--person {
 			border: 0;
+			padding-bottom: 18px;
 		}
+		
+		&--apps {
+			padding-bottom: 13px;
+			padding-left: 59px;
+			margin-bottom: 25px;
+		}
+		
+		&--contact {
+			padding-left: 59px;
+			padding-right: 59px;
+			padding-top: 35px;
+		}
+		
+		&--achievements {
+			padding-left: 58px;
+			padding-bottom: 25px;
+		}
+		
+		&--emotions {
+			padding: 35px 59px;
+		}
+	}
+	
+	.form__label {
+		padding-left: 60px;
+		margin: 25px 0 27px 0;
+		&--radio {
+			margin: 25px 0 45px 0;
+		}
+	}
+	
+	.form__person .form__text-label {
+		flex-basis: 36px;
+		padding-top: 18px;
+		padding-left: 0;
+		margin-right: 20px;
+		flex-grow: 0;
+	}
+	
+	.form__person .form__text-input {
+		flex-basis: 500px;
+		width: auto;
+		flex-grow: 1;
+		margin-bottom: 52px;
+	}
+	
+	.form__text-input:last-of-type {
+		margin-bottom: 0;
 	}
 	
 	.form__title--contact {
 		display: inline;
 	}
 	
+	.form__contact .form__text-input {
+		position: relative;
+		margin-bottom: 10px;
+	}
+	
+	.form__contact .form__text-label {
+		margin-bottom: 29px;
+	}
+	
+	.form__contact .form__text-label:last-of-type {
+		margin-bottom: 0;
+	}
+	
+	.form__input-wrap {
+		position: relative;
+		width: 100%;
+	}
+	
+	.form__input-wrap::after {
+		content: " ";
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 62px;
+		height: 62px;
+		background: #e5e5e5;
+	}
+	
+	.form__legend {
+		padding-top: 21px;
+		font-size: 14px;
+	}
+	
 	.form__person {
 		order: 1;
+		padding-top: 71px;
 	}
 	
 	.form__apps {
 		order: 2;
+		margin-bottom: 32px;
 	}
 	
 	.form__contact {
@@ -145,14 +332,31 @@
 	
 	.form__achievements {
 		order: 4;
+		padding-top: 58px;
+		margin-bottom: 20px;
 	}
 	
 	.form__emotions {
 		order: 5;
+		margin-bottom: 60px;
 	}
 	
 	.form__button-wrapper {
+		flex-direction: row;
+		justify-content: space-between;
 		order: 6;
+	}
+	
+	.form__text-label--phone {
+		order: 1;
+	}
+	
+	.form__text-label--mail {
+		order: 3;
+	}
+	
+	.form__input-wrap--mail {
+		order: 2;
 	}
 }
 
@@ -164,16 +368,26 @@
 		justify-content: space-between;
 	}
 	
+	.form__intro-text {
+		width: 757px;
+	}
+	
 	.form__person {
-		flex-basis: 47%;
+		flex-basis: 46.5%;
+		padding-top: 83px;
 	}
 	
 	.form__apps {
 		flex-basis: 47%;
+		padding-top: 70px;
 	}
 	
 	.form__contact {
 		flex-basis: 100%;
+	}
+	
+	.form__contact .form__text-label {
+		margin-bottom: 0;
 	}
 	
 	.form__achievements {
@@ -186,5 +400,74 @@
 	
 	.form__button-wrapper {
 		flex-basis: 100%;
+		margin-top: 6px;
+	}
+	
+	.form__person .form__text-input {
+		flex-basis: 340px;
+	}
+	
+	.form__label {
+		padding-left: 83px;
+		&--beach {
+			order: 3;
+		}
+		&--norris {
+			order: 1;
+		}
+		&--souvenirs {
+			order: 4;
+		}
+		&--tower {
+			order: 2;
+		}
+		&--hotel {
+			order: 5;
+		}
+	}
+	
+	.form__achievements .form__label {
+		padding-left: 59px;
+		flex-basis: 200px;
+	}
+	
+	.form__apps-indicator {
+		left: 23px;
+	}
+	
+	.form__text-label--phone {
+		order: 2;
+	}
+	
+	.form__text-label--mail {
+		flex-basis: 354px;
+	}
+	
+	.form__input-wrap {
+		width: 375px;
+		&--mail {
+			order: 1;
+		}
+	}
+	
+	.form__fields{
+		&--contact {
+			padding-bottom: 12px;
+		}
+		&--achievements  {
+			padding-bottom: 32px;
+		}
+	}
+	
+	.form__achievements .form__flex-wrap {
+		flex-direction: row;
+	}
+	
+	.form__text-emotions {
+		height: 125px;
+	}
+	
+	.form__legend span:last-of-type {
+		display: inline;
 	}
 }

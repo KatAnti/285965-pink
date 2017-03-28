@@ -1,69 +1,48 @@
 .intro {
-	margin-top: -65px;
-	background-color: @bg-dark;
+	display: flex;
+	flex-direction: column;
+	min-height: 170px;
 	color: #fff;
 	z-index: 1;
+	&--mockup {
+		background-image: url("../img/iphone-hand-mobile@1x.png");
+		background-position: left 85px;
+		background-repeat: no-repeat;
+	}
 }
 
 .intro__title {
 	.h2();
 }
 
-.intro__bg {
-	padding-top: 65px;
-	background-image: url("../img/bg-back-mobile@1x.jpg");
-	background-position: center 0;
-	background-repeat: no-repeat;
-}
-
-.intro__mockup {
-	width: 258px;
-	height: 286px;
-	margin-top: 110px;
-	background-image: url("../img/iphone-hand-mobile@1x.png");
-	background-position: center bottom;
-	background-repeat: no-repeat;
-}
-
 .intro__info-wrap {
-	max-width: 250px;
-	.side-paddings();
-	padding-top: 25px;
-}
-
-.intro__wrapper{
-	position: relative;
-	.container();
-	.clearfix();
+	background-color: @bg-dark;
 	text-align: center;
+	padding-top: 30px;
+	.side-paddings();
 }
 
 .intro__available {
-	padding-bottom: 30px;
+	padding-bottom: 17px;
+	line-height: 24px;
 }
 
 .intro__slogan {
-	display: none;
-	font-size: 40px;
 	font-weight: 300;
+	min-height: 370px;
+	font-size: 0;
+	margin: 0 auto 0;
 }
 
 @media @tablet-width {
 	.intro {
-		margin-top: -110px;
-	}
-	
-	.intro__bg {
-		padding-top: 110px;
-		background-size: cover;
-	}
-	
-	.intro__wrapper--index {
-		min-height: 615px;
+		.container();
+		background-position: right bottom;
+		min-height: 320px;
 	}
 	
 	.intro__info-wrap {
-		float: left;
+		padding: 0;
 	}
 	
 	.intro__mockup {
@@ -73,16 +52,43 @@
 	}
 	
 	.intro__slogan {
-		display: block;
-		width: 200px;
-		margin: 0 auto;
-		padding-top: 90px;
+		min-height: 130px;
+		margin: 0 0 31px 7%;
+		width: 38%;
+		font-size: 40px;
+		text-align: center;
 		line-height: 1.2;
+	}
+	
+	.intro__info-wrap {
+		flex-grow: 2;
+		background: none;
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		margin: 0 0 62px 1.5%;
+	}
+	
+	.intro__available {
+		font-size: 18px;
+		padding-bottom: 30px;
 	}
 }
 
 @media @desktop-width {
-	.intro__bg--center {
-		background-position: center center;
+	.intro {
+		min-height: 282px;
+	}
+	
+	.intro__slogan {
+		margin: 0 0 55px 1%;
+		width: 31%;
+		font-size: 50px;
+	}
+	
+	.intro__info-wrap {
+		width: 33%;
+		margin: 0 0 60px;
+		padding-bottom: 15px;
 	}
 }

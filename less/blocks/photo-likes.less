@@ -1,5 +1,30 @@
 .photo-likes {
+	display: flex;
+	flex-direction: row;
+	flex-basis: 100%;
 	color: @pink;
 	font-size: 12px;
 	text-transform: uppercase;
+}
+
+.photo-likes__heart-icon {
+	width: 13px;
+	height: 11px;
+	margin-right: 18px;
+}
+
+@media @tablet-width {
+	.photo-post--panorama .photo-likes {
+		flex-basis: 74%;
+		justify-content: flex-end;
+		order: 2;
+	}
+	.photo-likes {
+		justify-content: space-between;
+		align-self: flex-end;
+
+	}
+	.photo-likes__heart-icon {
+		order: 1;
+	}
 }

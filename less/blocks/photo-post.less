@@ -1,6 +1,11 @@
 .photo-post__text {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 	padding: 15px;
 	background: @bg-grey;
+	font-size: 14px;
+	line-height: 24px;
 	&--panorama {
 		.container();
 		width: 250px;
@@ -8,7 +13,10 @@
 }
 
 .photo-post{
+	display: flex;
+	flex-direction: column;
 	width: 280px;
+	margin-bottom: 24px;
 	&--panorama {
 		width: 100%;
 	}
@@ -16,6 +24,8 @@
 
 .photo-post__person-name {
 	font-weight: bold;
+	display: inline-block;
+	margin-right: 5px;
 }
 
 .photo-post__time {
@@ -23,20 +33,97 @@
 	text-transform: uppercase;
 }
 
+.photo-post p {
+	margin-top: 0;
+	flex-basis: 100%;
+}
+
+.photo-post__photo {
+	width: 100%;
+	display: block;
+	min-height: 180px;
+	&--panorama {
+		position: relative;
+		min-height: 138px;
+	}
+	&--panorama::before {
+		content: "панорама дня";
+		position: absolute;
+		top: 0;
+		right: 16.5%;
+		display: block;
+		background: @pink;
+		padding: 6px 20px;
+		font-size: 12px;
+		text-transform: uppercase;
+		color: #ffffff;
+		font-weight: 700;
+	}
+}
+
 @media @tablet-width {
-	
+	.photo-post__text {
+		flex-grow: 1;
+		padding: 24px;
+		&--panorama {
+			width: 568px;
+		}
+		&--panorama p{
+			margin-bottom: 0;
+		}
+	}
+	.photo-post__photo {
+		min-height: 300px;
+		&--panorama {
+			min-height: 509px;
+		}
+		&--panorama::before {
+			top: 11%;
+			right: 4.5%;
+		}
+		&--panorama .photo-post__time {
+			order: 1;
+		}
+	}
 	.photo-post {
 		flex-basis: 300px;
+		margin-bottom: 18px;
+		&--panorama {
+			flex-basis: 100%;
+			margin-bottom: 52px;
+		}
 	}
 	
-	.photo-post__text--panorama {
-		width: 590px;
+	.photo-post__text--panorama p {
+		order: 3;
 	}
 }
 
 @media @desktop-width {
-	
-	.photo-post__text--panorama {
-		width: 910px;
+	.photo-post__photo {
+		min-height: 400px;
+		&--panorama {
+			min-height: 509px;
+		}
+		&--panorama::before {
+			top: 11%;
+			right: 10.3%;
+			padding-top: 3px;
+			padding-bottom: 3px;
+		}
+	}
+	.photo-post__text {
+		padding: 20px 26px;
+		min-height: 118px;
+		&--panorama {
+			width: 890px;
+			min-height: auto;
+		}
+	}
+	.photo-post {
+		margin-bottom: 50px;
+		&--panorama {
+			margin-bottom: 56px;
+		}
 	}
 }

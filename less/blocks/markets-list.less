@@ -1,3 +1,25 @@
 .markets-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 205px;
 	.list();
+	margin: 0 auto 21px auto;
+}
+
+.markets-list__item {
+	width: 44px;
+	height: 55px;
+}
+
+@media @tablet-width {
+	.markets-list {
+		margin-bottom: 30px;
+	}
+}
+
+@media @desktop-width {
+	.markets-list {
+		margin-bottom: 37px;
+	}
 }
