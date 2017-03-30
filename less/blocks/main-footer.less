@@ -16,20 +16,33 @@
 }
 
 .main-footer__copyrights {
-	width: 140px;
+	width: 163px;
 	font-size: 14px;
 }
 
 .main-footer__developer-logo {
-	display: block;
+	position: relative;
+	top: 14px;
+	right: -11px;
+	display: inline-block;
 	width: 28px;
 	height: 32px;
+}
+
+.main-footer__developer-logo svg {
+	fill: @pink;
+	&:hover {
+		fill: @text-color;
+	}
+	&:active {
+		opacity: 0.3;
+	}
 }
 
 @media @tablet-width {
 	.main-footer {
 		padding-top: 33px;
-		padding-bottom: 70px;
+		padding-bottom: 40px;
 	}
 	
 	.main-footer--index {

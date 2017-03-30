@@ -41,10 +41,12 @@
 .photo-post__photo {
 	width: 100%;
 	display: block;
-	min-height: 180px;
+	height: 180px;
+	overflow: hidden;
+	text-align: center;
 	&--panorama {
 		position: relative;
-		min-height: 138px;
+		height: 137px;
 	}
 	&--panorama::before {
 		content: "панорама дня";
@@ -73,9 +75,9 @@
 		}
 	}
 	.photo-post__photo {
-		min-height: 300px;
+		height: 300px;
 		&--panorama {
-			min-height: 509px;
+			height: 509px;
 		}
 		&--panorama::before {
 			top: 11%;
@@ -101,9 +103,9 @@
 
 @media @desktop-width {
 	.photo-post__photo {
-		min-height: 400px;
+		height: 400px;
 		&--panorama {
-			min-height: 509px;
+			min-height: 506px;
 		}
 		&--panorama::before {
 			top: 11%;

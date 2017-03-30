@@ -1,4 +1,31 @@
 .social-link {
 	display: inline-block;
 	vertical-align: top;
+	width: 44px;
+	height: 44px;
+	margin: 0 6px;
+	border: 3px solid #e9ebec;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	&:hover {
+		border-color: @text-color;
+	}
+	&:active {
+		border-color: #e9ebec;
+		opacity: 0.3;
+	}
+	&--twitter {
+		background-image: url("../img/icon-twitter.svg");
+	}
+	&--facebook {
+		background-image: url("../img/icon-facebook.svg");
+	}
+	&--youtube {
+		background-image: url("../img/icon-youtube.svg");
+	}
+}
+
+.social-link a {
+	display: block;
 }

@@ -1,0 +1,153 @@
+.logo {
+	display: inline-block;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.logo--header {
+	display: inline-block;
+	width: 75px;
+	height: 22px;
+	overflow: hidden;
+	cursor: pointer;
+	&:hover .logo__text {
+		fill: @pink;
+	}
+	&:hover .logo__glass-with-stars {
+		fill: @pink;
+	}
+	&:active .logo__text {
+		fill: #ffffff;
+		opacity: 0.3;
+	}
+	&:active .logo__glass-with-stars {
+		fill: #ffffff;
+		opacity: 0.3;
+	}
+	&:hover .logo__glass {
+		fill: @pink;
+	}
+	&:active .logo__glass {
+		fill: #ffffff;
+		opacity: 0.3;
+	}
+}
+
+.logo--header svg {
+	position: relative;
+	left: -72px;
+	top: -17px;
+}
+
+.logo--header .logo__text {
+	fill: #ffffff;
+}
+
+.logo--header .logo__star {
+	fill: @pink;
+	display: none;
+}
+
+.logo--header .logo__glass-with-stars {
+	fill: #ffffff;
+	display: none;
+}
+
+.logo--header .logo__glass {
+	fill: #ffffff;
+	display: none;
+}
+
+.logo--header .logo__glass-star {
+	fill: @pink;
+	display: none;
+}
+
+.logo--footer {
+	float: left;
+	width: 147px;
+	height: 41px;
+	&:hover .logo__text {
+		fill: @pink;
+	}
+	&:hover .logo__glass-with-stars {
+		fill: @pink;
+	}
+	&:active .logo__text {
+		fill: @bg-dark;
+	}
+	&:hover .logo__glass {
+		fill: @pink;
+	}
+	&:active {
+		opacity: 0.3;
+	}
+}
+
+.logo--footer .logo__text {
+	fill: @bg-dark;
+}
+
+.logo--footer .logo__star {
+	fill: @pink;
+	display: none;
+}
+
+.logo--footer .logo__glass-with-stars {
+	fill: @pink;
+	display: none;
+}
+
+.logo--footer .logo__glass {
+	fill: @pink;
+}
+
+.logo--footer .logo__glass-star {
+	fill: @bg-dark;
+	display: none;
+}
+
+@media @tablet-width {
+	.logo {
+		width: 147px;
+		height: 41px;
+	}
+	.logo--header svg {
+		left: 0px;
+		top: 0px;
+	}
+	.logo--header .logo__glass {
+		display: block;
+	}
+	.logo--footer .logo__glass {
+		display: block;
+	}
+}
+
+@media @desktop-width {
+	.logo--header .logo__glass {
+		display: none;
+	}
+	.logo--header .logo__star {
+		display: block;
+	}
+	.logo--header .logo__glass-with-stars {
+		display: block;
+	}
+	.logo--header .logo__glass-star {
+		display: block;
+	}
+	
+	.logo--footer .logo__glass {
+		display: none;
+	}
+	.logo--footer .logo__star {
+		display: block;
+	}
+	.logo--footer .logo__glass-with-stars {
+		display: block;
+	}
+	.logo--footer .logo__glass-star {
+		display: block;
+	}
+}

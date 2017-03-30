@@ -11,6 +11,13 @@
 		border: 3px solid #ffffff;
 		border-radius: 30px;
 		margin-bottom: 35px;
+		&:hover {
+			background-color: #ffffff;
+			color: @pink;
+		}
+		&:active {
+			color: fade(@pink, 30%);
+		}
 	}
 	&--competitive-send {
 		border: none;
@@ -66,6 +73,9 @@
 		}
 		&--post {
 			margin-bottom: 24px;
+		}
+		&--download-app {
+			margin-bottom: 45px
 		}
 	}
 }

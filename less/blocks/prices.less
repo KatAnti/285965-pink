@@ -1,6 +1,6 @@
 .prices {
-	padding-top: 65px;
-	padding-bottom: 45px;
+	padding-top: 62px;
+	padding-bottom: 42px;
 	background-color: @bg-grey;
 	text-transform: uppercase;
 }
@@ -71,7 +71,9 @@
 	min-height: 30px;
 	min-width: 139px;
 	padding: 16px 0 16px 20px;
-	background: #ffffff;
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	background-position: right 15px center;
 	border: 2px solid #f2f2f2;
 	&--ttl {
 		visibility: hidden;
@@ -91,6 +93,12 @@
 	&--comments::before {
 		content: "Комментарии";
 	}
+	&--included {
+		background-image: url("../img/icon-yes.svg");
+	}
+	&--not-included {
+		background-image: url("../img/icon-no.svg");
+	}
 }
 
 .prices__options-table {
@@ -102,33 +110,49 @@
 	text-align: center;
 }
 
+.prices__toggle {
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	border: 3px solid @bg-grey;
+	background-color: #bec2c7;
+	margin-left: 10px;
+	&:hover {
+		background-color: #7e868f;
+	}
+	&:active {
+		background-color: #e9ebec;
+	}
+	&--active {
+		background: @bg-grey;
+		border-color: @text-color;
+	}
+}
+
+
 @media @tablet-width {
-	
 	.prices {
-		padding-top: 34px;
+		padding-top: 37px;
 		padding-bottom: 31px;
 	}
-	
 	.prices__wrapper {
 		.container();
 	}
-	
 	.prices__package-name {
 		font-size: 16px;
 	}
-	
 	.prices__main-price {
 		font-size: 18px;
 	}
-	
 	.prices__table-head {
 		min-width: 140px;
 		padding: 8px 0;
 	}
-	
 	.prices__option {
 		min-width: 120px;
 		padding: 10px 0 11px 20px;
+		background-position: center center;
 		&--ttl {
 			visibility: visible;
 			text-transform: none;
@@ -138,36 +162,29 @@
 			display: none;
 		}
 	}
-	
 	.prices__options-table {
 		transform: translateX(0px);
 	}
-	
 	.prices__toggles {
 		display: none;
 	}
 }
 
 @media @desktop-width {
-	
 	.prices {
-		padding-top: 145px;
+		padding-top: 65px;
 		padding-bottom: 58px;
 	}
-	
 	.prices__package-name {
 		font-size: 18px;
 	}
-	
 	.prices__main-price {
 		font-size: 24px;
 	}
-	
 	.prices__table-head {
 		min-width: 176px;
 		padding: 19px 0;
 	}
-	
 	.prices__option {
 		min-width: 157px;
 		padding: 14px 0 14px 20px;
