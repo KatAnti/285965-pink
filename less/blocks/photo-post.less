@@ -1,12 +1,14 @@
 .photo-post__text {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
 	padding: 15px;
 	background: @bg-grey;
 	font-size: 14px;
 	line-height: 24px;
 	&--panorama {
+		flex-direction: row;
+		flex-wrap: wrap;
 		.container();
 		width: 250px;
 	}
@@ -24,13 +26,13 @@
 
 .photo-post__person-name {
 	font-weight: bold;
-	display: inline-block;
 	margin-right: 5px;
 }
 
 .photo-post__time {
 	font-size: 12px;
 	text-transform: uppercase;
+	font-weight: 300;
 }
 
 .photo-post p {
@@ -52,10 +54,11 @@
 		content: "панорама дня";
 		position: absolute;
 		top: 0;
-		right: 16.5%;
+		left: 50%;
+		width: 104px;
 		display: block;
 		background: @pink;
-		padding: 6px 20px;
+		padding: 6px 18px;
 		font-size: 12px;
 		text-transform: uppercase;
 		color: #ffffff;
@@ -81,7 +84,7 @@
 		}
 		&--panorama::before {
 			top: 11%;
-			right: 4.5%;
+			left: 75%;
 		}
 		&--panorama .photo-post__time {
 			order: 1;
@@ -109,7 +112,7 @@
 		}
 		&--panorama::before {
 			top: 11%;
-			right: 10.3%;
+			left: 77.5%;
 			padding-top: 3px;
 			padding-bottom: 3px;
 		}

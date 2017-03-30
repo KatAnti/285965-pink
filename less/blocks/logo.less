@@ -4,6 +4,7 @@
 	cursor: pointer;
 }
 
+
 .logo--header {
 	display: inline-block;
 	width: 75px;
@@ -64,9 +65,10 @@
 }
 
 .logo--footer {
-	float: left;
-	width: 147px;
-	height: 41px;
+	display: inline-block;
+	width: 150px;
+	height: 40px;
+	margin-bottom: 29px;
 	&:hover .logo__text {
 		fill: @pink;
 	}
@@ -111,6 +113,10 @@
 	.logo {
 		width: 147px;
 		height: 41px;
+		&--footer {
+			float: left;
+			margin-bottom: 0;
+		}
 	}
 	.logo--header svg {
 		left: 0px;
