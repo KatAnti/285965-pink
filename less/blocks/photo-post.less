@@ -66,6 +66,16 @@
 	}
 }
 
+.photo-post__photo {
+	&--panorama img {
+		max-width: initial;
+		position: relative;
+		margin-left: 50%;
+		left: -160px;
+		z-index: -1;
+	}
+}
+
 @media @tablet-width {
 	.photo-post__text {
 		flex-grow: 1;
@@ -84,7 +94,7 @@
 		}
 		&--panorama::before {
 			top: 11%;
-			left: 75%;
+			left: 77%;
 		}
 		&--panorama .photo-post__time {
 			order: 1;
@@ -98,9 +108,13 @@
 			margin-bottom: 52px;
 		}
 	}
-	
 	.photo-post__text--panorama p {
 		order: 3;
+	}
+	.photo-post__photo {
+		&--panorama img {
+			left: -350px;
+		}
 	}
 }
 
@@ -112,7 +126,7 @@
 		}
 		&--panorama::before {
 			top: 11%;
-			left: 77.5%;
+			left: 85%;
 			padding-top: 3px;
 			padding-bottom: 3px;
 		}
@@ -129,6 +143,11 @@
 		margin-bottom: 50px;
 		&--panorama {
 			margin-bottom: 56px;
+		}
+	}
+	.photo-post__photo {
+		&--panorama img {
+			left: -600px;
 		}
 	}
 }
