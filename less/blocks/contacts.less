@@ -1,5 +1,5 @@
 .contacts {
-	padding-top: 40px;
+	padding-top: 43px;
 	text-align: center;
 	}
 
@@ -56,6 +56,9 @@ a.contacts__contact-point {
 }
 
 @media @tablet-width {
+	.contacts {
+		padding-top: 45px;
+	}
 	.contacts__header {
 		width: 485px;
 		margin: 0 auto;
@@ -64,15 +67,18 @@ a.contacts__contact-point {
 		display: inline-block;
 		vertical-align: top;
 		width: 245px;
-		margin: 30px 30px 15px;
+		margin-bottom: 43px;
+	}
+	.contacts__item:last-of-type {
+		margin-bottom: 0;
 	}
 	.contacts__list {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
 		flex-wrap: wrap;
-		padding-top: 13px;
-		padding-bottom: 6px;
+		padding-top: 43px;
+		padding-bottom: 26px;
 	}
 	.contacts__map {
 		height: 380px;
@@ -92,21 +98,25 @@ a.contacts__contact-point {
 
 @media @desktop-width {
 	.contacts__map {
-		height: 500px;
+		height: 480px;
 		background-image: url("../img/bg-map-desktop@2x.jpg");
 		background-size: 1200px auto;
 	}
 	.contacts {
 		padding-top: 65px;
 	}
-	.contacts__item--adress {
-		order:1;
-	}
-	.contacts__item--mail {
-		order:2;
+	.contacts__item {
+		margin-bottom: 22px;
+		&--adress {
+			order:1;
+		}
+		&--mail {
+			order:2;
+		}
 	}
 	.contacts__list {
-		padding-top: 26px;
+		padding-top: 54px;
+		padding-bottom: 40px;
 	}
 	.contacts__title {
 		margin-bottom: 22px;

@@ -11,7 +11,7 @@
 
 .form__intro-text {
 	.container();
-	padding-top: 50px;
+	padding-top: 46px;
 	text-align: center;
 	line-height: 30px;
 }
@@ -74,12 +74,13 @@
 }
 
 .form__text-label {
+	display: inline-block;
 	color: @pink;
 	font-size: 14px;
 	line-height: 30px;
 	text-transform: uppercase;
 	padding-left: 22px;
-	margin-bottom: 5px;
+	margin-bottom: 4px;
 }
 
 .form__text-input {
@@ -210,7 +211,7 @@
 }
 
 .form__person {
-	padding-top: 32px;
+	padding-top: 33px;
 }
 
 .form__legend span:first-of-type {
@@ -378,7 +379,14 @@
 	.form__text-label--mail {
 		order: 1;
 	}
-
+	.form__person-input-wrap {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 51px;
+	}
+	.form__person-input-wrap:last-of-type {
+		margin-bottom: 0;
+	}
 }
 
 @media @desktop-width {
