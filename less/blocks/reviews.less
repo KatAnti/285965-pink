@@ -1,6 +1,10 @@
 .reviews {
+	position: relative;
 	padding-top: 45px;
-	padding-bottom: 45px;
+	padding-bottom: 60px;
+	&::after {
+		.grey_triangle();
+	}
 }
 
 .reviews__wrapper {
@@ -28,28 +32,24 @@
 }
 
 @media @tablet-width {
-	
 	.reviews {
-		padding-bottom: 73px;
+		padding-bottom: 64px;
 	}
-	
 	.reviews__item {
-		padding-bottom: 78px;
+		display: flex;
+		flex-direction: column;
 		font-size: 18px;
 		line-height: 30px;
 	}
-	
 	.reviews__person-info {
-		position: absolute;
-		bottom: 0;
 		width: 100%;
+		order: 1;
+		padding-top: 18px;
 	}
-	
 	.reviews__person-info span {
 		display: block;
 		font-size: 14px;
 	}
-	
 	.reviews__person-name {
 		font-size: 20px;
 		line-height: 30px;
@@ -60,24 +60,19 @@
 	.reviews__person-name {
 		font-size: 24px;
 	}
-	
 	.reviews {
 		padding-top: 57px;
-		padding-bottom: 45px;
+		padding-bottom: 46px;
 	}
-	
 	.reviews__toggles {
 		display: none;
 	}
-	
 	.reviews__list {
 		margin-bottom: 0;
 	}
-	
 	.reviews__person-info span {
 		font-size: 18px;
 	}
-	
 	.reviews__item {
 		width: 700px;
 		margin: 0 auto;
@@ -86,14 +81,13 @@
 		&::before {
 			content: " ";
 			position: absolute;
-			top:0;
+			top: 15px;
 			left: 50%;
 			margin-left: -42px;
 			width: 85px;
 			height: 75px;
-			background: #ccc;
+			background-image: url("../img/icon-quotes.svg");
+			background-repeat: no-repeat;
 		}
 	}
-	
-	
 }

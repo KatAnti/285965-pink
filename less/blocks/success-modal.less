@@ -1,0 +1,64 @@
+.success-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -160px;
+	width: 320px;
+	text-align: center;
+	padding: 40px 0 0;
+	background: #ffffff;
+	box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.15);
+}
+
+.success-modal__title {
+	.modal-title();
+	width: 280px;
+	margin: 0 auto;
+	margin-bottom: 27px;
+}
+
+.success-modal p {
+	width: 280px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.success-modal__btn-wrap {
+	padding: 45px 20px;
+	background-color: @bg-grey;
+}
+
+@media @tablet-width {
+	.success-modal {
+		margin-left: -220px;
+		width: 460px;
+	}
+	.success-modal__title {
+		width: 230px;
+		margin: 0 auto 27px;
+	}
+	.success-modal p {
+		font-size: 18px;
+		width: 310px;
+		margin: 0 auto 35px;
+	}
+	.success-modal__btn-wrap {
+		padding: 45px 80px;
+	}
+}
+
+@media @desktop-width {
+	.success-modal {
+		margin-left: -390px;
+		width: 780px;
+	}
+	.success-modal__title {
+		width: 400px;
+	}
+	.success-modal p {
+		width: 400px;
+	}
+	.success-modal__btn-wrap {
+		padding: 45px 160px;
+	}
+}

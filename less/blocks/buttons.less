@@ -11,6 +11,13 @@
 		border: 3px solid #ffffff;
 		border-radius: 30px;
 		margin-bottom: 35px;
+		&:hover {
+			background-color: #ffffff;
+			color: @pink;
+		}
+		&:active {
+			color: fade(@pink, 30%);
+		}
 	}
 	&--competitive-send {
 		border: none;
@@ -20,6 +27,16 @@
 		margin-bottom: 37px;
 		border-radius: 4px;
 		text-transform: uppercase;
+		&:hover {
+			background-color: #1c9b5e;
+		}
+		&:active {
+			color: fade(#ffffff, 30%);
+		}
+		&:disabled {
+			background-color: #e5e5e5;
+			color: #ffffff;
+		}
 	}
 	&--post {
 		width: 100%;
@@ -55,6 +72,42 @@
 			color: fade(#ffffff, 30%);
 		}
 	}
+	&--ok {
+		border: none;
+		background-color: @bg-btn;
+		height: 63px;
+		width: 100%;
+		border-radius: 4px;
+		text-transform: uppercase;
+		&:hover {
+			background-color: #1c9b5e;
+		}
+		&:active {
+			color: fade(#ffffff, 30%);
+		}
+		&:disabled {
+			background-color: #e5e5e5;
+			color: #ffffff;
+		}
+	}
+	&--close-modal {
+		border: none;
+		background-color: @bg-btn;
+		height: 63px;
+		width: 100%;
+		border-radius: 4px;
+		text-transform: uppercase;
+		&:hover {
+			background-color: #1c9b5e;
+		}
+		&:active {
+			color: fade(#ffffff, 30%);
+		}
+		&:disabled {
+			background-color: #e5e5e5;
+			color: #ffffff;
+		}
+	}
 }
 
 @media @tablet-width {
@@ -66,6 +119,9 @@
 		}
 		&--post {
 			margin-bottom: 24px;
+		}
+		&--download-app {
+			margin-bottom: 45px
 		}
 	}
 }
@@ -87,5 +143,4 @@
 			width: 45%;
 		}
 	}
-	
 }

@@ -18,8 +18,22 @@
 }
 
 .upload__editor {
-	margin-bottom: 44px;
-	height: 44px;
+	margin-bottom: 28px;
+	height: 48px;
+	fill: #b5b9be;
+	&:hover {
+		fill: #8d949b
+	}
+	&--active {
+		fill: @pink;
+	}
+	&--crop {
+		margin-left: 20px;
+	}
+	&--contrast {
+		margin-right: 20px;
+		padding-top: 10px;
+	}
 }
 
 .upload__buttons-wrap {
@@ -76,6 +90,9 @@
 		border: 2px solid @pink;
 		border-radius: 50%;
 	}
+	&:hover::after {
+		background: @pink;
+	}
 	&--crop {
 		order: 5;
 	}
@@ -115,24 +132,32 @@
 	
 	.upload__editor {
 		position: relative;
-		width: 30px;
-		margin-right: 20px;
-		margin-bottom: 0;
+		width: 55px;
+		margin: 8px 56px 0 0;
+		zoom: 0.5;
 		&::after {
 			content: " ";
 			position: absolute;
-			bottom: -5px;
+			bottom: -47px;
 			left: 0;
 			display: block;
-			width: 275px;
+			width: 550px;
 			height: 1px;
 			background: #dddfe0;
+		}
+		&--contrast {
+			padding-left: 10px;
+			padding-top: 5px;
+			margin-right: 45px;
+		}
+		&--crop {
+			margin-left: 0;
 		}
 	}
 	
 	.upload__range {
 		width: 200px;
-		margin-top: 11px;
+		margin-top: 15px;
 		&--fill {
 			display: block;
 		}
@@ -157,7 +182,8 @@
 
 @media @desktop-width {
 	.upload {
-		.container();
+		width: 940px;
+		margin: 0 auto;
 		margin-bottom: 23px;
 	}
 	.upload__wrapper {
@@ -180,9 +206,14 @@
 	}
 	
 	.upload__editor {
+		zoom: 1;
+		margin: -6px 20px 0 0;
 		&::after {
 			bottom: -11px;
 			width: 410px;
+		}
+		&--contrast::after {
+			bottom: -4px;
 		}
 	}
 	.upload__buttons-wrap {

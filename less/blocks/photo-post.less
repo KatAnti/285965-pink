@@ -1,12 +1,14 @@
 .photo-post__text {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
 	padding: 15px;
 	background: @bg-grey;
 	font-size: 14px;
 	line-height: 24px;
 	&--panorama {
+		flex-direction: row;
+		flex-wrap: wrap;
 		.container();
 		width: 250px;
 	}
@@ -24,13 +26,13 @@
 
 .photo-post__person-name {
 	font-weight: bold;
-	display: inline-block;
 	margin-right: 5px;
 }
 
 .photo-post__time {
 	font-size: 12px;
 	text-transform: uppercase;
+	font-weight: 300;
 }
 
 .photo-post p {
@@ -41,23 +43,36 @@
 .photo-post__photo {
 	width: 100%;
 	display: block;
-	min-height: 180px;
+	height: 180px;
+	overflow: hidden;
+	text-align: center;
 	&--panorama {
 		position: relative;
-		min-height: 138px;
+		height: 137px;
 	}
 	&--panorama::before {
 		content: "панорама дня";
 		position: absolute;
 		top: 0;
-		right: 16.5%;
+		left: 50%;
+		width: 104px;
 		display: block;
 		background: @pink;
-		padding: 6px 20px;
+		padding: 6px 18px;
 		font-size: 12px;
 		text-transform: uppercase;
 		color: #ffffff;
 		font-weight: 700;
+	}
+}
+
+.photo-post__photo {
+	&--panorama img {
+		max-width: initial;
+		position: relative;
+		margin-left: 50%;
+		left: -160px;
+		z-index: -1;
 	}
 }
 
@@ -73,13 +88,13 @@
 		}
 	}
 	.photo-post__photo {
-		min-height: 300px;
+		height: 300px;
 		&--panorama {
-			min-height: 509px;
+			height: 509px;
 		}
 		&--panorama::before {
 			top: 11%;
-			right: 4.5%;
+			left: 77%;
 		}
 		&--panorama .photo-post__time {
 			order: 1;
@@ -93,21 +108,25 @@
 			margin-bottom: 52px;
 		}
 	}
-	
 	.photo-post__text--panorama p {
 		order: 3;
+	}
+	.photo-post__photo {
+		&--panorama img {
+			left: -350px;
+		}
 	}
 }
 
 @media @desktop-width {
 	.photo-post__photo {
-		min-height: 400px;
+		height: 400px;
 		&--panorama {
-			min-height: 509px;
+			min-height: 506px;
 		}
 		&--panorama::before {
 			top: 11%;
-			right: 10.3%;
+			left: 85%;
 			padding-top: 3px;
 			padding-bottom: 3px;
 		}
@@ -124,6 +143,11 @@
 		margin-bottom: 50px;
 		&--panorama {
 			margin-bottom: 56px;
+		}
+	}
+	.photo-post__photo {
+		&--panorama img {
+			left: -600px;
 		}
 	}
 }

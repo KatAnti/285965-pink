@@ -8,6 +8,7 @@
 		background-image: url("../img/iphone-hand-mobile@1x.png");
 		background-position: left 85px;
 		background-repeat: no-repeat;
+		background-size: 258px auto;
 	}
 }
 
@@ -34,61 +35,93 @@
 	margin: 0 auto 0;
 }
 
+@media @retina {
+	.intro--mockup {
+		background-image: url("../img/iphone-hand-mobile@2x.png");
+	}
+}
+
+@media (min-width: 321px) and (max-width: 659px) {
+.intro {
+	&--mockup {
+		background-image: url("../img/iphone-hand-mobile@1x.png");
+		background-position: center 85px;
+		background-repeat: no-repeat;
+		background-size: 258px auto;
+	}
+}
+}
+
 @media @tablet-width {
 	.intro {
-		.container();
+		width: 620px;
+		margin: 0 auto;
 		background-position: right bottom;
 		min-height: 320px;
+		&--mockup {
+			background-image: url("../img/iphone-hand-tablet@1x.png");
+			background-position: -38px 0;
+			background-size: 700px auto;
+		}
 	}
-	
-	.intro__info-wrap {
-		padding: 0;
-	}
-	
 	.intro__mockup {
 		position: absolute;
 		bottom: 0;
 		right: 0;
 	}
-	
 	.intro__slogan {
 		min-height: 130px;
-		margin: 0 0 31px 7%;
+		margin: 20px 0 31px 5%;
 		width: 38%;
 		font-size: 40px;
 		text-align: center;
 		line-height: 1.2;
 	}
-	
 	.intro__info-wrap {
 		flex-grow: 2;
 		background: none;
 		width: 50%;
 		display: flex;
 		flex-direction: column;
-		margin: 0 0 62px 1.5%;
+		margin: 0 0 62px 0.5%;
+		padding: 0;
 	}
-	
 	.intro__available {
 		font-size: 18px;
 		padding-bottom: 30px;
 	}
 }
 
+@media @retina-tablet {
+	.intro--mockup {
+		background-image: url("../img/iphone-hand-tablet@2x.png");
+	}
+}
+
 @media @desktop-width {
 	.intro {
+		width: 940px;
 		min-height: 282px;
+		&--mockup {
+			background-image: url("../img/iphone-hand-desktop@1x.png");
+			background-position: 17px 0;
+			background-size: 1050px auto;
+		}
 	}
-	
 	.intro__slogan {
-		margin: 0 0 55px 1%;
+		margin: 5px 0 55px 1%;
 		width: 31%;
 		font-size: 50px;
 	}
-	
 	.intro__info-wrap {
 		width: 33%;
 		margin: 0 0 60px;
 		padding-bottom: 15px;
+	}
+}
+
+@media @retina-desktop {
+	.intro--mockup {
+		background-image: url("../img/iphone-hand-desktop@2x.png");
 	}
 }

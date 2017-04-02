@@ -15,57 +15,84 @@
 }
 
 @media @tablet-width {
-	
 	.effect {
 		display: block;
 		padding-top: 90px;
-		padding-bottom: 30px;
+		padding-bottom: 56px;
 	}
-	
 	.effect__item {
-		padding-top: 10px;
+		position: relative;
+		padding-top: 4px;
+		padding-left: 309px;
+		padding-right: 18px;
 		&::before{
 			content: " ";
+			position: absolute;
 			display: block;
-			float: left;
+			top: -32px;
+			left: 0;
 			width: 240px;
 			height: 275px;
-			margin-right: 77px;
-			margin-top: -44px;
-			background: #000;
+			background-image: url("../img/icon-timer.svg");
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+		&::after {
+			content: "24";
+			display: block;
+			position: absolute;
+			box-sizing: border-box;
+			top: 25px;
+			left: 19px;
+			width: 201px;
+			height: 201px;
+			border: 14px solid @pink;
+			padding-top: 70px;
 			border-radius: 50%;
+			text-align: center;
+			font-size: 96px;
+			color: @pink;
+			font-weight: 700;
 		}
 	}
-	
 	.effect__title {
 		font-size: 30px;
-		line-height: 30px;
+		line-height: 36px;
 	}
 }
 
 @media @desktop-width {
-	
-	.effect__item {
-		padding-top: 95px;
+	.effect__title {
+		line-height: 30px;
 	}
-	
+	.effect__item {
+		padding-top: 92px;
+		padding-left: 368px;
+		padding-bottom: 47px;
+	}
 	.effect__item p {
 		margin-bottom: 30px;
 		margin-top: 24px;
 	}
-	
 	.effect {
 		background: @bg-grey;
-		padding-top: 30px;
-		padding-bottom: 63px;
+		padding-top: 16px;
+		padding-bottom: 69px;
 	}
-	
 	.effect__item {
 		&::before{
-			width: 300px;
-			height: 348px;
-			margin-right: 67px;
-			margin-top: -95px;
+			width: 298px;
+			height: 345px;
+			top: -3px;
+		}
+		&::after {
+			width: 256px;
+			height: 256px;
+			top: 66px;
+			left: 22px;
+			font-size: 120px;
+			border: 19px solid @pink;
+			padding-top: 89px;
 		}
 	}
 }
