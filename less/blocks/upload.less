@@ -28,10 +28,10 @@
 		fill: @pink;
 	}
 	&--crop {
-		margin-left: 20px;
+		margin-left: 17px;
 	}
 	&--contrast {
-		margin-right: 20px;
+		margin-right: 25px;
 		padding-top: 10px;
 	}
 }
@@ -66,17 +66,10 @@
 .upload__range {
 	position: relative;
 	width: 85.5%;
-	visibility: hidden;
-	&::before {
-		content: " ";
-		position: absolute;
-		top: 2px;
-		visibility: visible;
-		display: block;
-		width: 100%;
-		height: 2px;
-		background: @text-color;
-	}
+	display: block;
+	height: 2px;
+	background: @text-color;
+	margin-bottom: 16px;
 	&::after {
 		content: " ";
 		position: absolute;
@@ -110,17 +103,14 @@
 		flex-direction: row;
 		justify-content: space-between;
 	}
-	
 	.upload__controls {
 		flex-basis: 260px;
 		padding-right: 14px;
 		justify-content: initial;
 	}
-	
 	.upload {
 		padding-top: 58px;
 	}
-	
 	.upload__photo-preview {
 		width: 300px;
 		height: 400px;
@@ -129,35 +119,37 @@
 		flex-direction: column;
 		flex-basis: 55px;
 	}
-	
 	.upload__editor {
 		position: relative;
-		width: 55px;
-		margin: 8px 56px 0 0;
-		zoom: 0.5;
+		width: 27.5px;
+		margin: 8px 29px 0 0;
+		height: 24px;
 		&::after {
 			content: " ";
 			position: absolute;
-			bottom: -47px;
+			bottom: -21px;
 			left: 0;
 			display: block;
-			width: 550px;
+			width: 275px;
 			height: 1px;
 			background: #dddfe0;
 		}
 		&--contrast {
 			padding-left: 10px;
 			padding-top: 5px;
-			margin-right: 45px;
+			margin-right: 20px;
 		}
 		&--crop {
 			margin-left: 0;
 		}
 	}
-	
+	.upload__editor svg {
+		zoom: 0.5;
+	}
 	.upload__range {
 		width: 200px;
-		margin-top: 15px;
+		margin-top: 18px;
+		margin-bottom: 7px;
 		&--fill {
 			display: block;
 		}
@@ -168,7 +160,6 @@
 			order: 0;
 		}
 	}
-	
 	.upload__buttons-wrap {
 		order:0;
 		align-self: flex-end;
@@ -192,21 +183,20 @@
 	.upload__photo-preview {
 		margin-left: 80px;
 	}
-	
 	.upload__controls {
 		flex-basis: 410px;
 		margin-right: 66px;
 		justify-content: space-between;
 		padding: 0;
 	}
-	
 	.upload__range {
 		width: 290px;
-		margin-right: 21px;
+		margin-right: 24px;
+		margin-top: 15px;
 	}
-	
 	.upload__editor {
-		zoom: 1;
+		width: 55px;
+		height: 48px;
 		margin: -6px 20px 0 0;
 		&::after {
 			bottom: -11px;
@@ -214,7 +204,11 @@
 		}
 		&--contrast::after {
 			bottom: -4px;
+			margin-right: 45px;
 		}
+	}
+	.upload__editor svg {
+		zoom: 1;
 	}
 	.upload__buttons-wrap {
 		flex-direction: row;
