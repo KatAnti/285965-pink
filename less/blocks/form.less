@@ -25,18 +25,19 @@
 	padding-top: 25px;
 	padding-bottom: 25px;
 	border: none;
-	.container();
-	
+	width: 280px;
+	margin: 0 auto;
 	&--person {
 		padding-top: 0;
 	}
-	
 	&--achievements {
-		padding-bottom: 15px;
+		padding-bottom: 12px;
 	}
-	
 	&--apps {
 		padding-bottom: 0;
+	}
+	&--emotions {
+		margin-top: 16px;
 	}
 }
 
@@ -56,7 +57,7 @@
 }
 
 .form__emotions {
-	padding-top: 38px;
+	padding-top: 24px;
 }
 
 .form__title {
@@ -65,9 +66,9 @@
 	line-height: 18px;
 	text-transform: uppercase;
 	text-align: center;
-	-webkit-padding-start: 30px;
-	-webkit-padding-end: 30px;
-	
+	padding-left: 30px;
+	padding-right: 30px;
+	margin: 0 auto;
 	&--contact {
 		display: none;
 	}
@@ -109,10 +110,11 @@
 	line-height: 30px;
 	display: block;
 	position: relative;
-	padding-left: 67px;
+	padding-left: 70px;
 	margin: 17px 0 35px 0;
 	&--radio {
 		margin-bottom: 45px;
+		margin-top: 12px;
 	}
 }
 
@@ -194,11 +196,14 @@
 
 .form__text-emotions {
 	box-sizing: border-box;
-	padding: 15px;
+	padding: 11px 17px;
 	width: 100%;
 	height: 200px;
 	font-size: 18px;
 	line-height: 30px;
+	color: @text-color;
+	border: 2px solid #e6e6e6;
+	margin-top: -7px;
 }
 
 .form__button-wrapper {
@@ -206,7 +211,7 @@
 	flex-direction: column;
 	.container();
 	text-align: center;
-	margin-top: 9px;
+	margin-top: 16px;
 	text-transform: uppercase;
 }
 
@@ -249,48 +254,57 @@
 	}
 	.form__achievements {
 		background: transparent;
+		order: 4;
+		padding-top: 58px;
+		margin-bottom: 16px;
 	}
 	.form__apps {
 		background: transparent;
+		padding-top: 41px;
+		order: 2;
+		margin-bottom: 35px;
+	}
+	.form__text-emotions {
+		height: 193px;
+		margin-top: -4px;
+		padding: 15px 17px;
 	}
 	.form__fields {
 		width: auto;
 		border: 2px solid #e5e5e5;
-		
 		&--person {
 			border: 0;
 			padding-bottom: 18px;
 		}
 		&--apps {
 			padding-bottom: 13px;
-			padding-left: 59px;
+			padding-left: 56px;
 			margin-bottom: 25px;
 		}
 		&--contact {
 			padding-left: 59px;
 			padding-right: 59px;
-			padding-top: 35px;
+			padding-top: 38px;
 		}
 		&--achievements {
 			padding-left: 58px;
 			padding-bottom: 25px;
 		}
 		&--emotions {
-			padding: 35px 59px;
+			padding: 40px 59px 44px;
 		}
 	}
 	.form__label {
 		padding-left: 60px;
 		margin: 25px 0 27px 0;
 		&--radio {
-			margin: 25px 0 45px 0;
+			margin: 25px 0 44px 0;
 		}
 	}
 	.form__person .form__text-label {
-		flex-basis: 36px;
-		padding-top: 18px;
 		padding-left: 0;
 		margin-right: 20px;
+		margin-top: 17px;
 		flex-grow: 0;
 	}
 	.form__person .form__text-input {
@@ -303,7 +317,7 @@
 		margin-bottom: 0;
 	}
 	.form__title--contact {
-		display: inline;
+		display: block;
 	}
 	.form__contact .form__text-input {
 		position: relative;
@@ -311,6 +325,7 @@
 	}
 	.form__contact .form__text-label {
 		margin-bottom: 29px;
+		padding-left: 19px;
 	}
 	.form__contact .form__text-label:last-of-type {
 		margin-bottom: 0;
@@ -351,18 +366,9 @@
 		order: 1;
 		padding-top: 71px;
 	}
-	.form__apps {
-		order: 2;
-		margin-bottom: 32px;
-	}
 	.form__contact {
 		order: 3;
 		padding-top: 0;
-	}
-	.form__achievements {
-		order: 4;
-		padding-top: 58px;
-		margin-bottom: 20px;
 	}
 	.form__emotions {
 		order: 5;
@@ -372,6 +378,7 @@
 		flex-direction: row;
 		justify-content: space-between;
 		order: 6;
+		margin-top: 9px;
 	}
 	.form__text-label--phone {
 		order: 1;
@@ -395,6 +402,7 @@
 		flex-wrap: wrap;
 		flex-direction: row;
 		justify-content: space-between;
+		padding-bottom: 0;
 	}
 	.form__intro-text {
 		width: 757px;
@@ -404,7 +412,7 @@
 		padding-top: 83px;
 	}
 	.form__apps {
-		flex-basis: 47%;
+		flex-basis: 46.4%;
 		padding-top: 70px;
 	}
 	.form__contact {
@@ -460,19 +468,26 @@
 	.form__input-wrap {
 		width: 375px;
 	}
-	.form__fields{
+	.form__fields {
 		&--contact {
 			padding-bottom: 12px;
+			padding-top: 33px;
 		}
 		&--achievements  {
 			padding-bottom: 32px;
+		}
+		&--apps {
+			padding-left: 53px;
+		}
+		&--emotions {
+			padding: 36px 59px;
 		}
 	}
 	.form__achievements .form__flex-wrap {
 		flex-direction: row;
 	}
 	.form__text-emotions {
-		height: 125px;
+		height: 129px;
 	}
 	.form__legend span:last-of-type {
 		display: inline;
@@ -482,5 +497,11 @@
 	}
 	.form__field-point--phone {
 		margin-bottom: 0;
+	}
+	.form__person-input-wrap {
+		margin-bottom: 54px;
+	}
+	.form__legend {
+		padding-top: 18px;
 	}
 }
